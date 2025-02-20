@@ -1,16 +1,69 @@
-# auth_app
+# Authentication with Appwrite
 
-A new Flutter project.
+This project demonstrates authentication using **email and password** with **Appwrite** in a Flutter application.
 
-## Getting Started
+## 🚀 Features
+- User registration with email and password
+- User login authentication
+- Secure session management
+- Appwrite integration for backend authentication
 
-This project is a starting point for a Flutter application.
+## 🛠️ Setup Instructions
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
+Make sure you have the following installed:
+- [Flutter](https://flutter.dev/docs/get-started/install)
+- [Appwrite](https://appwrite.io/) account and project setup
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Steps to Set Up the Project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/komalsingh22/authentication-with-appwrite.git
+   cd authentication-with-appwrite
+   ```
+
+2. **Install Dependencies**
+   ```sh
+   flutter pub get
+   ```
+
+3. **Configure Appwrite SDK**
+   - Create an Appwrite project.
+   - Set up authentication using email/password.
+   - Obtain your Appwrite **Project ID**, **Endpoint**, and **API key**.
+   - Update the Appwrite configuration in your Flutter app:
+     ```dart
+     Client client = Client()
+       .setEndpoint('https://[YOUR-APPWRITE-ENDPOINT]')
+       .setProject('[YOUR-PROJECT-ID]');
+     ```
+
+4. **Run the App**
+   ```sh
+   flutter run
+   ```
+
+## 📂 Project Structure
+```
+📦 authentication-with-appwrite
+├── lib
+│   ├── main.dart            # Entry point of the application
+│   ├── auth_service.dart     # Appwrite authentication logic
+│   ├── login_screen.dart     # User login screen
+│   ├── signup_screen.dart    # User registration screen
+│   ├── home_screen.dart      # Home screen after login
+├── pubspec.yaml              # Flutter dependencies
+└── README.md                 # Project documentation
+```
+
+## 🤝 Contributing
+Feel free to fork this repository and submit pull requests to improve the project.
+
+## 📜 License
+This project is licensed under the MIT License.
+
+---
+
+🚀 **Happy Coding!** 😊
+
